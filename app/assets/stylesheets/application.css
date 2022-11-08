@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ h1 {
+  font-size: 70px;
+ }
+
+ .grid {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.letter {
+  display: inline;
+  padding: 20px;
+  background-color: rgb(70, 70, 213);
+  font-size: 60px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.4)
+}
+
+.input {
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.btn {
+  border-radius: 5px;
+  height: 40px;
+  font-size: 30px;
+  background-color: rgb(70, 70, 213);
+  color: whitesmoke;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.4);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.word_guess {
+  text-align: center;
+}

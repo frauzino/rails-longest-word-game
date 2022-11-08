@@ -1,0 +1,15 @@
+<p>
+  <ul class="grid">
+    <% @letters.each do | letter |%>
+      <li class="letter"><%=letter%></li>
+    <%end%>
+  </ul>
+  <div class="form_container">
+    <form class="word_guess" action="/score" method="post" data-turbo="false" >
+      <input class="input" type="text" name="word">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :grid_letters, @letters %>
+      <input class="btn submit" type="submit" value="Guess!">
+    </form>
+  </div>
+</p>
